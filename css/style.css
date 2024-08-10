@@ -1,0 +1,292 @@
+
+
+
+:root, [data-bs-theme=light]
+{
+    --universe: rgb(26, 108, 192);
+
+
+
+}
+header{
+    
+    background-image: url('../images/pexels-pixabay-220201.jpg');
+    background-size: 100% 100%;
+    position: relative;
+   
+
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: rgb(26, 108, 192);
+}
+
+.navbar-nav{
+    --bs-nav-link-color: aliceblue;
+    --bs-nav-link-hover-color: var(--universe);
+}
+
+
+.info{
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    
+    
+    
+}
+
+.info a{
+    text-decoration: none;
+}
+
+button {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 2px solid #303030;
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--universe);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   }
+   
+   button:hover {
+    box-shadow: 0 0 10px var(--universe), 0 0 25px var(--universe), 0 0 50px var(--universe);
+    transition-delay: 0.6s;
+   }
+   
+   button span {
+    position: absolute;
+   }
+   
+   button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--universe));
+   }
+   
+   button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--universe));
+   }
+   
+   button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--universe));
+   }
+   
+   button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--universe));
+   }
+   
+   button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   button:active {
+    background: var(--universe);
+    background: linear-gradient(to top right, var(--universe), #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px var(--universe), 0 0 8px #001eff, 0 0 8px var(--universe);
+    transition: 0.1s;
+   }
+   
+   button:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+
+   .layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+   }
+   
+   .planets{
+    background-color: rgb(249, 243, 243);
+   }
+
+
+   .planetbtn {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(29, 177, 218);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+   }
+   
+   .planetbtn:hover {
+    letter-spacing: 3px;
+    background-color: var(--universe);
+    color: hsl(0, 0%, 100%);
+    box-shadow: var(--universe) 0px 7px 29px 0px;
+   }
+   
+   .planetbtn :active {
+    letter-spacing: 3px;
+    background-color: var(--universe);
+    color: hsl(0, 0%, 100%);
+    box-shadow: var(--universe) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   }
+   
+   .planetbtn a{
+    text-decoration: none;
+    color: white;
+  
+   }
+   .stars{
+    background-color: #212121;
+   }
+
+   .starbtn {
+    --green: rgb(26, 108, 192);
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid rgb(26, 108, 192);
+    background: linear-gradient(to right, rgba(26, 108, 192 , 0.1) 1%, transparent 40%,transparent 60% , rgba(26, 108, 192 ,0.1) 100%);
+    color: rgb(26, 108, 192);
+    box-shadow: inset 0 0 10px rgba(26, 108, 192 ,0.1), 0 0 9px 3px rgba(26, 108, 192 ,0.1);
+   }
+   
+   .starbtn:hover {
+    color: rgb(26, 108, 192);
+    box-shadow: inset 0 0 10px rgba(26, 108, 192 ,0.1), 0 0 9px 3px rgba(26, 108, 192 ,0.1);
+   }
+   
+   .starbtn:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(26, 108, 192 ,0.1) 40%,rgba(26, 108, 192 ,0.1) 60% , transparent 100%);
+   }
+   
+   .starbtn:hover:before {
+    transform: translateX(15em);
+   }
+
+   .starbtn a{
+    text-decoration: none;
+   }
+
+   .galaxies{
+    background-color: rgb(249, 243, 243);
+   }
+   
+   .balckhole img{
+    width: 100%;
+
+
+   }
+   #holeimg {
+    border: 2px solid whitesmoke;
+    border-radius: 10%;
+    
+   }
+
+
+   .balckhole{
+    background-color: #212121;
+
+   }
+
+   .holebtn {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: rgb(29, 177, 218);
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .holebtn:hover {
+    background-color: #044a79;
+    box-shadow: 0 0 20px #6fc5ff50;
+  }
+  
+  .holebtn:active {
+    background-color: #044a79;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+  }
+
+  .holebtn a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .carousel-w-100{
+    width: 100% !important;
+    height: 70vh;
+  }
+
+  .balckhole img{
+    height: 60vh;
+  }
+
+  
+
